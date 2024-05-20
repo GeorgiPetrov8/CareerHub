@@ -1,0 +1,133 @@
+﻿.form-module{
+    height:100%;
+}
+
+.form-module input {
+    outline: none;
+    display: block;
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    margin: 0 0 20px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    font-wieght: 400;
+    transition: 0.3s ease;
+}
+
+    .form-module input:focus {
+        border: 1px solid #33b5e5;
+        color: #333333;
+    }
+
+.form-module .button {
+    cursor: pointer;
+    background: #33b5e5;
+    width: 100%;
+    border: 0;
+    padding: 10px 15px;
+    color: #ffffff;
+    transition: 0.3s ease;
+    font-size: 20px;
+}
+
+.form-module button:hover {
+    background: #178ab4;
+}
+
+@media only screen and (max-width: 768px) {
+    .form-module {
+        max-width: 100%;
+    }
+
+        .form-module .form {
+            padding: 20px;
+        }
+
+        .form-module h2 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .form-module input {
+            margin-bottom: 15px;
+        }
+
+        .form-module button {
+            font-size: 18px;
+        }
+
+        .form-module .cta {
+            padding: 10px 20px;
+            font-size: 10px;
+        }
+}
+
+@media only screen and (max-width: 480px) {
+    .form-module {
+        max-width: 100%;
+    }
+
+        .form-module .form {
+            padding: 15px;
+        }
+
+        .form-module h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .form-module input {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .form-module button {
+            font-size: 16px;
+        }
+
+        .form-module .cta {
+            padding: 8px 16px;
+            font-size: 9px;
+        }
+}
+
+.form-module .category {
+    display: block;
+    margin: 0 0 20px;
+}
+
+.styled-dropdown {
+    outline: none;
+    display: block;
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    font-weight: 400;
+    transition: 0.3s ease;
+}
+
+    /* Optional: Add hover and focus effects for better user experience */
+    .styled-dropdown:hover,
+    .styled-dropdown:focus {
+        border-color: #a0a0a0;
+    }
+
+textarea {
+    width: 100%;
+    height: 45%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+@media screen and (max-width: 1300px) {
+    textarea {
+        height: 20%; 
+    }
+}
+

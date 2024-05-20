@@ -1,0 +1,214 @@
+﻿html, body {
+    background: #e9e9e9;
+    height: 99%;
+}
+
+/* Title */
+.pen-title {
+    color: #666666;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 50px 0;
+    letter-spacing: 10px;
+}
+
+    .pen-title h1 {
+        margin: 0 0 20px;
+        font-size: 48px;
+        font-weight: 300;
+        font-weight: bold;
+    }
+
+.logo {
+    width: 150px;
+    padding-right: 8px;
+}
+
+/*Body of the site*/
+.container {
+    position: relative;
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+}
+
+    .container ::-webkit-scrollbar {
+        display: none;
+    }
+
+.left-section {
+    text-align: right;
+    flex: 16;
+    padding: 10px;
+}
+
+.middle-section {
+    flex: 15;
+    border-left: 2px solid lightgray;
+    border-right: 2px solid lightgray;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.right-section {
+    flex: 16;
+    padding: 10px;
+    text-align: left;
+}
+
+/*User*/
+.container .user-name {
+    font-size: 30px;
+    color: #4287f5;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 15px 10px 0 0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 110px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    border-radius: 10%;
+}
+
+    .dropdown-content .button {
+        display: block;
+        width: 100%;
+        color: #666666;
+        background-color: #f8f9fa;
+        border: 1px solid #f8f9fa;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: left;
+    }
+
+        .dropdown-content .button:hover {
+            border-color: #dadce0;
+            box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
+            color: #202124;
+            cursor: pointer;
+        }
+
+.button-wrapper {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 999;
+}
+
+
+.addPost {
+    border-radius: 50%;
+    padding: 15px 20px;
+    border: 2px solid lightgray;
+    color: #4287f5;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 18px;
+}
+
+    .addPost:hover {
+        background-color: #e0e0e0;
+        color: #2162b9;
+    }
+
+@media only screen and (max-width: 768px) {
+
+    .left-section {
+        flex: 3;
+    }
+
+    .middle-section {
+        flex: 1;
+    }
+
+    .right-section {
+        flex: 3;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .left-section {
+        flex: 3;
+    }
+
+    .middle-section {
+        flex: 1;
+    }
+
+    .right-section {
+        flex: 3;
+    }
+}
+
+.sorting {
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.sorting-label {
+    margin-right: 10px; 
+}
+
+.sorting-select {
+    margin-left: 10px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: deepskyblue;
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+    .sorting-select:after {
+        content: "\25BC";
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        color: #ffffff;
+    }
+
+    .sorting-select option {
+        background-color: deepskyblue;
+        color: #ffffff;
+    }
+
+        .sorting-select option:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+.sorting-button {
+    color: grey;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+    .sorting-button:hover {
+        background-color: dimgrey;
+        color: #ffffff;
+        border-radius: 5px;
+    }
